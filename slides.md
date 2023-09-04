@@ -10,6 +10,7 @@ layout: intro
   </span>
 </div>
 
+
 <!--
 - Ask audience - Who's working on / contributing to open-source?
 - Let's make this interactive - stop me when you have a question
