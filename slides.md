@@ -10,12 +10,10 @@ layout: intro
   </span>
 </div>
 
-
 <!--
 - Ask audience - Who's working on / contributing to open-source?
+  - Who's published his own library to other users?
 - Let's make this interactive - stop me when you have a question
-
-
 -->
 ---
 
@@ -27,6 +25,13 @@ layout: intro
 
 - 🎉 **Join the Community:** [Remult Discord](https://discord.gg/GXHk7ZfuG5)
 
+<!--
+- Start by getting to know remult
+  - Tutorials
+  - Examples
+  - Videos
+  - Docs
+-->
 ---
 
 # Spot the Opportunities 🕵️‍♂️
@@ -35,6 +40,10 @@ layout: intro
 
 - 💬 **Discord Dialogues:** Share, learn, innovate!
 
+<!-- 
+- Interestingly most feedback starts on the Discord channel
+- Also check out discussions
+-->
 ---
 
 # It's Not Just About the Code 🖥️
@@ -47,6 +56,10 @@ layout: intro
 
 - 📣 **Every Idea Matters:** We're listening!
 
+<!-- 
+- While the library itself is relatively complete, the Docs and content around it partial and lacking
+- If you ask us what's the most important thing one can contribute at this point in time - it's content
+-->
 ---
 layout: statement
 ---
@@ -55,6 +68,11 @@ layout: statement
 
 Why wait? Core maintainers here are always on the move.
 
+<!-- 
+- Bugs are usually fixed and patched within 24 hours
+- Feature requests for stuff that users need are acted on quickly
+- That doesn't mean you can't contribute - it just means you'll have to find work on your own...
+-->
 ---
 
 # Gear Up for Action 🔧
@@ -67,11 +85,19 @@ Why wait? Core maintainers here are always on the move.
 
 - 📘 **Docs Adventure:** Dive in with Vitepress in the "docs" folder: `npm i` and `npm run dev`. 
 
+<!-- 
+- Forking and developing locally is (now) pretty easy to do 
+  - Some tests won't run if you don't have DBs installed, but that's fine
+    - All tests run during CI
+- Let's see the repo I cloned on this PC
+  - Let's run the tests
+  - Let's try editing the docs
+-->
 ---
 layout: section
 ---
 
-# Deep Dive into the Architecture 🏛️
+# Deep Dive into the Architecture
 
 Compact. Powerful. ~12K lines of TypeScript complemented by ~14K of tests.
 
@@ -89,6 +115,11 @@ Compact. Powerful. ~12K lines of TypeScript complemented by ~14K of tests.
 
 - **Relations:** Relationship handlers.
 
+<!-- 
+- I'll try do divide Remult's code base into 3 conceptual areas
+- Joke about "don't touch this!"
+- Seriously you probably won't start with touching these
+-->
 ---
 
 ## 🛠️ Ready-Made Implementations:
@@ -104,7 +135,14 @@ _Grow Remult with your touch!_
 To Consider...
 - React (Hooks, Suspense, etc.)
 - State Management (TanStack query and beyond)
-  
+- Forms
+
+<!-- 
+- This is basically stuff that starts with identifying repetitive code while using remult
+- Examples (show code):
+  - Field types - autoIncrement, createAt, updatedAt, uuid
+  - Validators - required, unique
+-->
 ---
 
 ## 🔌 Pluggable Infrastructure:
@@ -117,8 +155,22 @@ _Open doors to new realms._
 
 - **Live Query Flavors:** SSE, Ably, you name it.
 
+- **GraphQL:** Some people like it.
+
+<br/><br/>
+
 - **New Frontiers:** Integrate Nuxt, SolidStart, Qwik...
 
+<!-- 
+- This can be a good area for adding value to Remult without messing with the core code
+- Data Providers - we published with just PG and JSON, then added Knex, then Mongo...
+- BE/FS frameworks - at the beginning we we're sure Express is all we need... 
+  - Someone asked for Deno so we did that
+  - Recently released Next.js App Router
+  - As more are added - the underlying abstraction becomes more powerful (show code for 'remultNext','remultFastify')
+- Examples - the story about jean-yeaves and SvelteKit and GraphQL
+  - Show PRs
+-->
 ---
 
 # Your Roadmap to Contributing 🛤️
